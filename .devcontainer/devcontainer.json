@@ -2,7 +2,7 @@
 	"name": "pytest-html",
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.13",
 	"features": {},
-	"postCreateCommand": "pip install -e .; pip install pre-commit tox; pre-commit install",
+	"postCreateCommand": "pip install -e .[test]; pip install bs4 assertpy; pre-commit install",
 	"customizations": {
 		"vscode": {
 			"extensions": [
